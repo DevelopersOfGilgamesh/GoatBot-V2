@@ -59,7 +59,7 @@ module.exports = {
       });
 
       const totalCommands = commands.size;
-      msg += `\nCurrently,the Gilgamesh bot has ${totalCommands} Commands that can be used\n`;
+      msg += `\nCurrently,the Enkidu The Chain of Heaven bot has ${totalCommands} Commands that can be used\n`;
       msg += `Just type ${prefix} help cmdname to view the details of that Command\n`;
       msg += `[ Zassho Enkidu ⛓️ ]`; // its not decoy so change it if you want 
 
