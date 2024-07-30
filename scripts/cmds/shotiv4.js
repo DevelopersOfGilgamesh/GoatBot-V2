@@ -5,7 +5,7 @@ const fs = require("fs");
 
 module.exports = {
 config: {
-  name: "shoti",
+  name: "shoti4",
   version: "1.0",
   author: "ralph/zed",//goatbot convert
   countDown: 20,
@@ -20,11 +20,11 @@ langs: {
   onStart: async function ({ api, event }) {
   
   api.sendMessage(`⏱️ | Video is sending please wait.`, event.threadID, event.messageID);
-axios.get('https://apivideo.saikidesu-support.repl.co/tiktok?apikey=opa').then(res => {
+axios.get('https://jeka-api.luabot24.repl.co/shoti/?apikey=geloo').then(res => {
   let ext = res.data.url.substring(res.data.url.lastIndexOf(".") + 1);
   let callback = function () {
           api.sendMessage({
-                                                body: `Shoti Viet Version 🤍`,
+                                                body: `random bebegurl sa tiktok`,
             attachment: fs.createReadStream(__dirname + `/cache/shoti.${ext}`)
           }, event.threadID, () => fs.unlinkSync(__dirname + `/cache/shoti.${ext}`), event.messageID);
         };
